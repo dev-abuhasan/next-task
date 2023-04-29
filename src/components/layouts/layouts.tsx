@@ -6,7 +6,7 @@ const Layouts = ({ children }: any) => {
             <section className='parent_section' style={{ minHeight: '90vh' }}>
                 {children}
             </section>
-            <footer className=''>
+            <footer className='text-center'>
                 Arogga © All Rights Reserved - {(new Date().getFullYear())}.
             </footer>
         </main>

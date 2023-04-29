@@ -17,3 +17,8 @@ ComponentName.getInitialProps = async () => {
   return { characters };
 };
 ```
+
+
+[pid].js
+const router = useRouter()
+const { pid } = router.query
