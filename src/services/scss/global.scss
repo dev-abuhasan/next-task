@@ -1,0 +1,36 @@
+// @tailwind base;
+// @tailwind components;
+// @tailwind utilities;
+
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "~bootstrap/scss/bootstrap";
+
+@import "./variable";
+
+* {
+    font-family: "Catamaran", sans-serif;
+}
+h1,
+h2,
+h3,
+.title {
+    font-family: "Mukta", sans-serif;
+}
+
+.toastMain {
+    .commonParent {
+        max-width: 300px;
+        color: #f2f2f2;
+
+        .notify_box {
+            display: flex;
+            align-items: center;
+        }
+    }
+    .successParent {
+        background-color: #66c27d;
+    }
+    .errorParent {
+        background-color: #f05b5b;
+    }
+}

@@ -1,0 +1,35 @@
+@import "@/services/scss/variable";
+
+.btn_cmn {
+    min-width: 245px;
+    padding: 15px 0;
+    border: none;
+    transition: all 0.4s;
+}
+.btn_warn {
+    // background-color: $warning;
+
+    &:hover {
+        // background-color: $dark;
+        // color: $light;
+    }
+}
+.warnActive {
+    // background-color: $dark;
+    // color: $light;
+}
+
+
+.btn_dark {
+    // background-color: $dark;
+    // color: $light;
+
+    &:hover {
+        // background-color: $warning;
+        // color: $light;
+    }
+}
+
+.darkActive {
+    // background-color: $warning;
+}
