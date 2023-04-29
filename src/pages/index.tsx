@@ -3,13 +3,14 @@ import ClickBtn from '@/components/ui-kits/buttons/click-button';
 import { GetServerSideProps, NextPage } from 'next';
 import axios from 'axios';
 import React, { useState } from 'react';
+import { HOST } from '@/services/utils/config';
 
 
 const Home: NextPage = ({ characters }: any) => {
   const [data, setData] = useState(characters ? characters : []);
 
   console.log(data);
-  
+
   const onClick = () => {
     console.log('object');
   };
@@ -31,7 +32,7 @@ const Home: NextPage = ({ characters }: any) => {
 
 
 export const getServerSideProps: GetServerSideProps = async () => {
-  const { data } = await axios.get('https://rickandmortyapi.com/api/character');
+  const { data } = await axios.get(`${HOST}/character`);
 
   return {
     props: {
